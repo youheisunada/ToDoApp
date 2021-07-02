@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thmeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn</title>
+</head>
+
+<body>
+    <h1>ToDO application</h1>
+    <h2>LogIn</h2>
+    <p> Input your ID and push[confirm] to start ToDoAPP </p>
+    <form role="form" th:action="@{/login}" method="post">
+        <table>
+            <tr>
+                <td><label>Input your ID: </label></td>
+                <td><input type="text" name = "ID"/></td>
+            </tr>
+        </table>
+        <p><input type="submit" value="confirm" /></p>
+    </form>
+</body>
+</html>
